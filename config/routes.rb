@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'visitors#index'
+  resources :advertisements
+  root to: 'advertisements#index'
   devise_for :users
   resources :users
 end

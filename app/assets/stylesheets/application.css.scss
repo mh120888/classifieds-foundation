@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+form {
+  background: #FFF;
+  padding: 1em;
+  max-width: 500px;
+  border: solid .25em #666;
+
+  p {
+    margin: 0 auto .25em;
+  }
+
+  img {
+    display: inline-block;
+    margin: 0 auto 1em;
+  }
+}
+
+nav.bottom {
+  display: block;
+  margin: 1em auto;
+  a {
+    display: inline-block;
+    padding: .5em;
+  }
+}

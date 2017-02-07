@@ -1,0 +1,25 @@
+// Place all the styles related to the Advertisements controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.advert {
+  background-color: #FFF;
+  display: inline-block;
+  position: relative;
+  margin: 1em auto;
+  padding: 1em;
+  border: solid .25em #666;
+  max-width: 100%;
+
+  small {
+    display: block;
+    font: .75em;
+    margin: .25em 0;
+  }
+
+  p {
+    margin: 2em auto;
+    font-size: 1.25em;
+    padding: 0;
+  }
+}

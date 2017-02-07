@@ -1,0 +1,20 @@
+<div class='advert'>
+  <h1>
+    <%= @advertisement.title %> | <%= @advertisement.price %>
+    <small>Posted by: <%= @advertisement.user.name %></small>
+  </h1>
+
+
+  <p><%= @advertisement.description %></p>
+
+  <% if !@advertisement.photo.file.nil? %>
+  <%= image_tag(@advertisement.photo.url) %>
+  <% end %>
+</div>
+
+<nav class='bottom'>
+  <% if @advertisement.user == current_user %>
+  <%= link_to 'Edit', edit_advertisement_path(@advertisement) %> |
+  <% end %>
+  <%= link_to 'Back', advertisements_path %>
+</nav>

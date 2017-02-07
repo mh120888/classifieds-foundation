@@ -1,0 +1,19 @@
+<%= simple_form_for(@advertisement) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.input :price %>
+    <%= f.input :photo, as: :file %>
+  </div>
+
+  <% if !@advertisement.photo.file.nil? %>
+    <p>Current photo:</p>
+    <%= image_tag(@advertisement.photo.url) %>
+  <% end %>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
